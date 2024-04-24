@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,6 +7,26 @@
 
 </head>
 <body>
+
+    <script>
+        // Function to detect browser language and redirect
+        function detectLanguage() {
+          const browserLang = navigator.language || navigator.userLanguage; // Get browser language
+          const supportedLangs = ["de"]; // Supported languages array
+          const defaultLang = "en"; // Default language if not supported
+    
+          let lang = defaultLang;
+         
+          // Check if browser language is supported
+          if (supportedLangs.includes(browserLang.substring(0, 2)) && browserLang.substring(0, 2) !== defaultLang) {
+            lang = browserLang.substring(0, 2);
+            // Redirect to corresponding HTML file based on language
+            window.location.href = `index_${lang}.html`;
+          }
+          
+        }
+        window.onload =  detectLanguage()
+    </script>
     <h1>Privacy Policy</h1>
     <p>Last updated: April 24, 2024</p>
     <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>

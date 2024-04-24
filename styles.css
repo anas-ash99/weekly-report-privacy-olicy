@@ -19,7 +19,7 @@ body {
 /* This will apply if the viewing area is up to 600px wide (typical for mobile devices) */
 @media screen and (max-width: 600px) {
     body {
-        font-size: 10px;
+        font-size: 15px;
         margin-left: 20px;
         margin-right: 20px;
     }
