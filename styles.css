@@ -15,6 +15,22 @@ body {
     overflow: hidden;
 }
 
+
+/* This will apply if the viewing area is up to 600px wide (typical for mobile devices) */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+
+    h1, h2, h3 {
+        line-height: 1.2;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
+
 header {
     background: #35424a;
     color: white;
