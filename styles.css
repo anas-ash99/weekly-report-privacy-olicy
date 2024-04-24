@@ -19,7 +19,6 @@ body {
 /* This will apply if the viewing area is up to 600px wide (typical for mobile devices) */
 @media screen and (max-width: 600px) {
     body {
-        background-color: #de7e7e;
         font-size: 14px;
         margin-left: 20px;
         margin-right: 20px;
